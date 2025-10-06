@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mallearner - Create Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="icon">👤➕</div>
+      <h2>Create Account</h2>
+      <p class="subtitle">Join Mallearner and start earning today</p>
+
+      <div class="warning">
+        ⚠️ <b>Important:</b> Only one account per device is allowed. Multiple accounts from the same device will be suspended.
+      </div>
+
+      <form id="registerForm">
+        <input type="text" id="fullname" placeholder="Full Name" required />
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <input type="text" id="referralCode" placeholder="Referral Code (Optional)" />
+        <p id="referralStatus">You were referred by: None</p>
+        <button type="submit">Register</button>
+      </form>
+
+      <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+</html>
